@@ -1,0 +1,7 @@
+
+db.createCollection( 'Client', {validator: {$jsonSchema: {bsonType: 'object',title:'Client',required: [         'nom',          'adreca',          'telef',          'email',          'registre'],properties: {nom: {bsonType: 'string'},adreca: {bsonType: 'object',
+title:'object',required: [         'carrer',          'num',          'ciutat',          'pais',          'cp'],properties: {carrer: {bsonType: 'string'},num: {bsonType: 'int'},pis: {bsonType: 'string'},porta: {bsonType: 'string'},ciutat: {bsonType: 'string'},pais: {bsonType: 'string'},cp: {bsonType: 'int'}}},telef: {bsonType: 'int'},email: {bsonType: 'string'},registre: {bsonType: 'date'},compra: {bsonType: 'object',
+title:'object',required: [         'ulleres'],properties: {ulleres: {bsonType: 'object',
+title:'object',required: [         'marca',          'graduacio',          'color_Vidre',          'tipus_montura',          'color_montura',          'preu'],properties: {marca: {bsonType: 'string'},graduacio: {bsonType: 'object',
+title:'object',required: [         'esquerra',          'dreta'],properties: {esquerra: {bsonType: 'double'},dreta: {bsonType: 'double'}}},color_Vidre: {bsonType: 'object',
+title:'object',required: [         'esquerra',          'dreta'],properties: {esquerra: {bsonType: 'string'},dreta: {bsonType: 'string'}}},tipus_montura: {bsonType: 'string'},color_montura: {bsonType: 'string'},preu: {bsonType: 'double'}}}}}}         }      }});  
